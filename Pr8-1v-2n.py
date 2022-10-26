@@ -28,4 +28,11 @@ for i, row in enumerate(a):
             min = j
     row[max], row[0] = row[0], row[max]
     row[min], row[-1] = row[-1], row[min]
-print(a)
+    
+def printmatrix(matrix): #Функция преобразования массива в матрицу
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            print("{:4d}".format(matrix[i][j]), end="")
+        print()
+        
+print(printmatrix(a))
